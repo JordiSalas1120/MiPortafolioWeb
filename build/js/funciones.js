@@ -1,7 +1,7 @@
 (function() {
 
     const botonDarkMode = document.querySelector('#check');
-
+    const menu = document.querySelector('#checke');
     const links = {
         1:"https://festivaldemusica-rock-edm.netlify.app/",
         2:"https://frontendstore-proyecto.netlify.app/",
@@ -17,6 +17,16 @@
     document.addEventListener('DOMContentLoaded',()=>{
         crearGaleria()
         modoOscuro()
+        menu.addEventListener('click', ()=>{
+            const enlaces = document.querySelectorAll("#enlaces")
+            const tituloPortafolio = document.querySelector('.titulo-portafolio')
+    
+            enlaces.forEach(enlace =>{
+                enlace.classList.toggle('menu-bar')
+                tituloPortafolio.style.display ='none'
+               
+            })
+        })
     })
 
     function crearGaleria(){
