@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Web</title>
+    <link  rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class="header inicio">
+        <nav class="nav-principal ">
+            <a href="index.html"  class="nav-btn">Inicio</a>
+            <a href="sitios.html"  class="nav-btn">Sitios Web</a>
+            <a href="#" class="nav-btn">Contactame</a>
+            <a href="#"class="nav-btn">CV</a>
+            <a href="index.html"><h1 class="titulo titulo-portafolio">Portafolio Web</h1></a>
+            <label class="switch" >
+                <input type="checkbox" id="check">
+                <span class="slider " ></span>
+            </label>
+            
+            
+            
+        </nav>
+        <div class="contenedor-icono">
+            <img class="icono" src="build/img/circuit.png" alt="icono">           
+        </div>
+        <div class="contenedor contenido-header">
+        </div> 
+        <div class="titulo titulo-header container two-row-mobile">
+          <section class="flexb">
+            <p>Hello </p>
+            <span class="emoticon">👋</span> 
+            <p>I'm</p> 
+          </section>
+          <section class="animation ">
+            <div class="first">Ethical Hacking</div>
+            <div class="second">Full-Stack Developer</div>
+            <div class="third">Systems Ingeneer</div>
+            <div class="four">Artist</div>
+          </section>
+        </div>
+        
+    </header>
+
+
+    <main>
+        
+        <section class="secciones seccion1" id="1">
+            <div class="galeria" id="galeria">   
+        
+               
+                    <div class="contenido-galeria efecto-card">
+                        <a href="sitios.html">
+                        <img name="imagen" src="" alt="">
+                        </a>
+                    </div> 
+                    <div class="botones-galeria">
+                        <button class="btn" id="izquierda"><</button>
+                        <button class="btn" id="derecha">></button>
+                        
+                    </div>
+                     
+                    
+               
+            </div>
+                <div class="informacion" >
+                    
+                    <div class="tarjeta">
+                     
+                       <img src="build/img/sinfondo.webp" alt="foto personal"class="photo">
+                      
+                     
+                        
+                        <div class="iconos-tarjeta">
+
+                            <div class="nombre-tarjeta">
+                              <p>Jordi Andres Salas Salvatierra</p>
+                            </div>
+                            <div class="contenedor-iconos">
+                              <a href="https://github.com/JordiSalas1120" target="_blank"><img id="iconos-tarjeta" src="build/img/github.webp" alt="iconos de redes sociales"></a>  
+                              <a href="#" target="_blank"><img id="iconos-tarjeta" src="build/img/wsp.webp" alt="iconos de redes sociales"></a>
+
+                              <a href="https://www.linkedin.com/in/jordisalvatierra1120/" target="_blank"><img id="iconos-tarjeta" src="build/img/in.webp" alt="iconos de redes sociales"></a> 
+                              <a href="#" target="_blank"><img id="iconos-tarjeta" src="build/img/github.webp" alt="iconos de redes sociales"></a>
+                              
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="descripcion">
+                        <p>Hola, mi nombre es Jordi Salas, soy Full Stack Developer y estudiante de ciencia de la computacion  en la UAGRM, con mas de dos años en el area de desarrollo. Cuento con multiples certificaciones de Frontend Developer, Backend Developer y como Ethical Hacking.
+                        </p>
+                    </div>
+                    
+                </div>
+           
+        </section>
+        <section class="secciones" onload="drawnCanvas()">
+
+            <h1 class="titulo-portafolio"> Skills</h1>
+            
+            <div class="skills">
+              <div id="frontend">
+                <h2 class="divSkills">Frontend</h2>
+                <div class="container">
+                  <div class="rotar"></div> 
+                  <div class="tarjetas-skills">
+                    
+                    <div class="container-circle html">
+                        
+                        <svg>
+                            
+                          <circle cx="48" cy ="48" r="43"/>
+                          
+                          <circle cx="48" cy ="48" r="43"/>
+                            
+                        </svg>
+                        <p>80%</p>
+                            <h1>HTML</h1>
+                            <h2>Avanzado</h2>
+                    </div>
+                    
+                  </div>
+                  
+                </div> 
+
+                <div class="container">
+                  <div class="rotar"></div>
+                  <div class="tarjetas-skills">
+                    <div class="container-circle css">
+                        <svg>
+                          <circle cx="48" cy ="48" r="43"/>
+                          <circle cx="48" cy ="48" r="43"/>
+                        </svg>
+                        <p>80%</p>
+                            <h1>CSS</h1>
+                            <h2>Avanzado</h2>
+                    </div>
+                  </div>
+                </div>
+
+                  <div class="container">
+                    <div class="rotar"></div> 
+                    <div class="tarjetas-skills">
+                      <div class="container-circle js">
+                          <svg>
+                            <circle cx="48" cy ="48" r="43"/>
+                            <circle cx="48" cy ="48" r="43"/>
+                          </svg>
+                          <p>80%</p>
+                            <h1>JS</h1>
+                            <h2>Avanzado</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="container">
+                  <div class="rotar"></div>
+                  <div class="tarjetas-skills">
+
+                        <div class="container-circle react">
+                          <svg>
+                            <circle cx="48" cy ="48" r="43"/>
+                            <circle cx="48" cy ="48" r="43"/>
+                          </svg>
+                          <p>45%</p>
+                          <h1>React</h1>
+                          <h2>Intermedio</h2>
+                        </div>
+                  </div>
+                </div>
+              </div>
+              <div id="backend">
+                <h2 class="divSkills">Backend</h2>
+                
+                  
+                  <div class="container">
+                    <div class="rotar"></div>
+                    <div class="tarjetas-skills">
+                      <div class="container-circle node">
+                          <svg>
+                            <circle cx="48" cy ="48" r="43"/>
+                            <circle cx="48" cy ="48" r="43"/>
+                          </svg>
+                          <p>80%</p>
+                          <h1>Nodejs</h1>
+                          <h2>Intermedio</h2>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container ">
+                    <div class="rotar"></div>
+                    <div class="tarjetas-skills">
+                      <div class="container-circle python">
+                          <svg>
+                            <circle cx="48" cy ="48" r="43"/>
+                            <circle cx="48" cy ="48" r="43"/>
+                          </svg>
+                          <p>70%</p>
+                          <h1>Python</h1>
+                          <h2>Intermedio</h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container">
+                    <div class="rotar"></div>
+                    <div class="tarjetas-skills ">
+                      <div class="container-circle php">
+                          <svg>
+                            <circle cx="48" cy ="48" r="43"/>
+                            <circle cx="48" cy ="48" r="43"/>
+                          </svg>
+                          <p>45%</p>
+                          <h1>PHP</h1>
+                          <h2>Intermedio</h2>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+            
+        </section>
+        <section class="secciones"></section>
+        <section class="secciones"></section>
+        
+    </main>
+    <footer>
+        <div class="footer">
+          <p>Todos los derechos reservados</p>
+          <div class="contactos">
+            <span class="contacto-footer">+591-69268351</span>
+            <span class="contacto-footer"> jordi.salas.salvatierra@protonmail.com</span>
+          </div>
+          
+        </div>
+        
+    </footer>
+        <script src="build/js/bundle.min.js"></script>
+</body>
+</html>
