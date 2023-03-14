@@ -1,4 +1,6 @@
 (function() {
+    const galeriaSitio = document.querySelector('#galeria-sitios');
+    const galeriaPracticasjs = document.querySelector('#galeria-jsmoderno');
 
     const botonDarkMode = document.querySelector('#check');
     const menu = document.querySelector('#checke');
@@ -15,7 +17,8 @@
     } 
 
     document.addEventListener('DOMContentLoaded',()=>{
-        crearGaleria()
+        crearGaleria(galeriaSitio, 13, "sitio")
+        crearGaleria(galeriaPracticasjs, 9, "practicasjs")
         modoOscuro()
         menu.addEventListener('click', ()=>{
             const enlaces = document.querySelectorAll("#enlaces")
@@ -29,21 +32,21 @@
         })
     })
 
-    function crearGaleria(){
-        const galeriaSitio = document.querySelector('#galeria-sitios');
+    function crearGaleria(elemento, rango,name){
+        
         var l = 0;
-        for(let i = 0; i <= 11; i++){
+        for(let i = 1; i <= rango; i++){
 
             let link = Object.values(links);
             const imagen = document.createElement('picture');
             imagen.classList.add('picture');
             imagen.innerHTML =
             
-            `<a href=${link[l]}> <img class="imagen" id=${[i]} target="_blank" loading="lazy" src="build/img/${i}.webp" alt="imagen de la galeria">
+            `<a href=${link[l]}> <img class="imagen" id=${[i]} target="_blank" loading="lazy" src="build/img/${name}-${i}.webp" alt="imagen de la galeria">
             </a>
             `;
-
-            galeriaSitio.appendChild(imagen);
+            console.log(imagen);
+            elemento.appendChild(imagen);
             
             
             l = l + 1; 
